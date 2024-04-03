@@ -7,7 +7,7 @@ function HomePage() {
     return (
         <div className='home'>
             <h1 className='heading'>Discover Exciting Events Happening Near You - Stay Tuned for Updates!</h1>
-            <p className='paragraph'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <p className='paragraph'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia
             </p>
             <RecoShows/>
             <UpcomingShows/>
