@@ -1,0 +1,83 @@
+
+.fasL{
+    font-size: 18px;
+}
+.upcoming h1 i{
+    color: black;
+}
+.upcoming h1{
+    font-size: 22px;
+    margin-left: 130px;
+}
+.card1{
+    height: 370px;
+    width: 379px;
+    margin-right: 25px;
+    border-radius: 10px;
+    border: 1px solid #B0BABF;
+    
+    flex-basis: 200;
+    margin-top: 30px;
+}
+.items{
+    margin-left: 130px;
+    margin-right:90px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.eventImg{
+    height: 278px;
+    border-radius: 10px;
+    z-index: -1;
+    position: relative; /* Set position to absolute for the image */ 
+
+}
+.date{
+    margin-top: -60px;
+    margin-left: 17px;
+    color: #ffffff;
+    background: #1e202284;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 325px;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+}
+.name{
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 35px;
+    color: #1E2022;
+}
+.location{
+    margin-left: 40px;
+    margin-top: -10px;
+    color: #989090;
+}
+.dst{
+    float: right;
+    margin-top:-34px;
+    margin-right: 20px;
+    color: #989090;
+    font-size: 14px;
+}
+@media (max-width: 856px){
+    .upcoming h1{
+        margin-left: 20px;
+    }
+    .items{
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .card1{
+        width: 330px;
+    }
+    .eventImg{
+        width: 330px;
+    }
+    .date{
+        width: 278px;
+        margin-left: 16px;
+    }
+}

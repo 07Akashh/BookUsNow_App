@@ -1,0 +1,127 @@
+
+.shows h1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 130px;
+    display: inline;
+}
+
+.shows a {
+    float: right;
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 130px;
+}
+
+.shows {
+    margin-top: 160px;
+}
+
+.arrow {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.containerCard{
+    margin-top: 35px;
+    margin-left:130px;
+}
+.cardContainer{
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.card{
+    display: inline-block;
+    width: 260px;
+    height: 380px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    color: #ffffff;
+}
+.dst{
+    float: right;
+    font-size: 10px;
+    margin-top: -5px;
+    margin-right: 20px;
+    color: #989090;
+}
+.date{
+    
+    float: right;
+    margin-top: -33px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.address{
+    float: left;
+    margin-top: -10px;
+    font-size: 12px;
+    margin-left: 20px;
+    color: #989090;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 315px;
+}
+.fasL{
+    font-size: 18px;
+}
+.upcoming h1 i{
+    color: black;
+}
+.upcoming h1{
+    font-size: 22px;
+    margin-left: 170px;
+}
+.card1{
+    height: 400px;
+    width: 350px;
+    margin-right: 25px;
+    border-radius: 10px;
+    border: 1px solid #B0BABF;
+    flex-grow: 1;
+    flex-basis: 200;
+    margin-top: 30px;
+}
+.items{
+    margin-left: 170px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 856px) {
+    .items{
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .containerCard{
+        margin-left: 20px;
+    }
+    .cardContainer{
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .shows h1{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: -1000px;
+    }
+    .shows a {
+        margin-left: 500px;
+    }
+    .shows{
+        margin-top: 50px;
+    }
+}
