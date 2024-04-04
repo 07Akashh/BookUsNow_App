@@ -5,6 +5,7 @@
     font-size: 22px;
     margin-left: 130px;
     display: inline;
+    
 }
 
 .shows a {
@@ -96,6 +97,9 @@
     margin-left: 170px;
     display: flex;
     flex-wrap: wrap;
+}
+.showsList{
+    position: sticky;
 }
 @media (max-width: 856px) {
     .items{

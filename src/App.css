@@ -1,1 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+.mobileView,
+.laptopview {
+  display: none; /* Initially hide both headers */
+}
+
+
+@media (min-width: 857px) {
+    .laptopview {
+      display: block; /* Show HeaderPage */
+    }
+  }
+  
+  /* Media query for screen min-width 857px */
+  @media (max-width: 856px) {
+    .mobileView {
+      display: block; /* Show HeaderPage2 */
+    }
+  }
