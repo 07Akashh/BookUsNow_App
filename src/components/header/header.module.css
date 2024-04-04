@@ -46,7 +46,6 @@ li{
 }
 .container{
     background-color: #ffffff;
-    width: 100%;
 }
 .favbtn{
     border: none;
@@ -123,5 +122,8 @@ li{
         float: right;
         justify-content: end;
         margin-left: 90px;
+    }
+    .item{
+        width: 100px;
     }
 }
