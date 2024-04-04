@@ -36,7 +36,7 @@ function RecoShows() {
     <div>
     <div className={Styles.shows}>
                 <h1>Recommended Shows <i className="fa-solid fa-arrow-right-long arrow"></i></h1>
-                <a href="/">See All</a>
+                <a href="/" className={Styles.seeAll}>See All</a>
             </div>
             <div className={Styles.showsList}>
                 <div className={Styles.containerCard}>

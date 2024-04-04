@@ -79,6 +79,7 @@ export default function LazyUpcomingShows() {
                 <div className={Styles.sticky}>
                     <div className={Styles.upcSticky}>
                         <h1>Upcoming Shows <i className="fa-solid fa-arrow-right-long arrow"></i></h1>
+                        <a href="/" className={Styles.seeAll}>See All</a>
                     </div>
                 </div>
                 <div className={Styles.container}>

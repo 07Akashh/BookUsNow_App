@@ -108,7 +108,7 @@
         flex-wrap: wrap;
     }
     .containerCard{
-        margin-left: 20px;
+        margin-left: 30px;
     }
     .cardContainer{
         overflow-x: scroll;
@@ -117,13 +117,16 @@
         overflow-y: hidden;
         white-space: nowrap;
     }
+    
     .shows h1{
         font-size: 15px;
-        margin-left: 20px;
+        margin-left: 30px;
         margin-top: -1000px;
     }
     .shows a {
-        margin-left: 500px;
+        width: 50px;
+        margin-right: 40px;
+        text-align: end;
     }
     .shows{
         margin-top: 50px;

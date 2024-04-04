@@ -10,16 +10,17 @@
     margin-top: 40px;
     font-size: 22px;
     margin-left: 130px;
-    
+
 }
-.container{
+
+.container {
     height: 84vh;
-    overflow:scroll;
-    
+    overflow: scroll;
+
     -ms-overflow-style: none;
     scrollbar-width: none;
     align-items: center;
-    
+
 }
 
 .card1 {
@@ -86,6 +87,10 @@
     color: #989090;
 }
 
+.seeAll {
+    display: none;
+}
+
 .dst {
     float: right;
     margin-top: -34px;
@@ -103,12 +108,18 @@
         margin-left: 0px;
     }
 
-    .container{
+    .container {
         margin-left: 8vw;
         width: 85vw;
     }
-   
 
+    .upcSticky a {
+        width: 50px;
+        color: #1E2022;
+    }
+    .upcSticky h1{
+        font-size: 17px;
+    }
     .eventImg {
         width: 349px;
     }
