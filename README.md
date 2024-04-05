@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Book Use Now
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Book Use Now is an event booking website designed to make event planning and booking hassle-free. Whether it's concerts, conferences, or workshops, users can easily find and book events using this platform.
 
-## Available Scripts
+## Features
+- Search and browse upcoming events
+- Book tickets for events
+- View event details including date, location, and description
+- Get recommendations based on user preferences
+- Seamless checkout process
 
-In the project directory, you can run:
+## Technologies Used
+- Frontend: HTML, CSS, JavaScript, React.js
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Authentication: JSON Web Tokens (JWT)
+- API Integration: Integration with external APIs for event data
 
-### `npm start`
+## Getting Started
+1. **Clone the repository**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ```bash
+    git clone https://github.com/07Akashh/BookUsNow_App.git
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Install Dependencies**:
 
-### `npm test`
+   ```bash
+   cd book-use-now
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Set Up Environment Variables**:
+- Create a `.env` file in the root directory.
+- Define environment variables such as database connection string, API keys, etc.
 
-### `npm run build`
+4. **Run the Application**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
+Contributions are welcome! If you find any issues or want to suggest enhancements, please create a GitHub issue or submit a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is licensed under the MIT License.
 
-### `npm run eject`
+## Support
+If you find Book Use Now helpful or have any questions, feel free to reach out to us.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Acknowledgements
+We would like to thank all the contributors who helped make Book Use Now possible.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Frontend Developer Internship Assignment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Objective
+The objective of this assignment is to build a responsive website that displays upcoming and recommended events. The website should fetch event data from provided APIs and support both desktop and mobile screen sizes.
 
-## Learn More
+### Demo Videos for Reference
+- [Desktop Video](#) *(insert link to desktop video)*
+- [Mobile Video](#) *(insert link to mobile video)*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Fetching Events
+The website should display two types of events: recommended shows and upcoming events.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Recommended Shows
+There are 8 recommended shows displayed in a horizontal infinite scroll. Fetch the recommended events using the following API:
 
-### Code Splitting
+https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The API response includes an `img_url` which should be used as the thumbnail image for the event.
 
-### Analyzing the Bundle Size
+### Upcoming Events
+Display several upcoming events in a vertical scroll. Fetch the upcoming events using this API:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=1&type=upcoming
 
-### Making a Progressive Web App
+Note: The upcoming events API has multiple pages. Fetch a new page of events only when the user has scrolled to the end of the page. Show a loading spinner while fetching the next page from the backend API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Example Event Schema
 
-### Advanced Configuration
+```json
+{
+    "eventName": "Winter Wonderland Fair",
+    "cityName": "West Douglas",
+    "date": "2024-03-24T00:00:00.000Z",
+    "weather": "Snowy 26C",
+    "distanceKm": "4264.1226847222415",
+    "img_url": "https://drive.google.com/file/d/1lS1XAo47YvNSoFp1NE5rmhTSQ8qNBWEh/view"
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
