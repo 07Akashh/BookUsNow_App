@@ -34,7 +34,7 @@ Book Use Now is an event booking website designed to make event planning and boo
 2. Navigate to the project directory:
 
     ```bash
-    cd reactapp-to-make-notes
+    cd book-us-now
     ```
 
 3. Install the project dependencies:
